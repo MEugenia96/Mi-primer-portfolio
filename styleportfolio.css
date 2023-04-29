@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    display: flex;
+    /* display: flex; */
     height: 100vh;
     background-color: #f7efdd;
     font-family: Indie Flower;
@@ -19,15 +19,20 @@ body{
 .items-nav{
     margin:0;
     padding: 0;
+    text-decoration: none;
+    color: #27354e;
 }
 .contacto{
-    padding: 0;
+    padding: 6px;
     background-color: #e8a503 ;
+    text-decoration: none;
+    color: #27354e;
+    border-radius: 6px;
 }
 .identidad-sitio{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding: 40px;
     align-items: center;
     width: 100%;
@@ -53,6 +58,25 @@ h2{
     font-size: 70px;
     font-weight: 900;
     color: #27917f  ;
+}
+.parrafos{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+.boton{
+    background-color: #77c0b4;
+    padding: 15px;
+    font-family: Indie Flower;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 
