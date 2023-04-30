@@ -22,7 +22,7 @@ body{
     text-decoration: none;
     color: #27354e;
 }
-.contacto{
+.boton-contacto{
     padding: 6px;
     background-color: #e8a503 ;
     text-decoration: none;
@@ -76,9 +76,54 @@ h2{
 main{
     display: flex;
     flex-direction: column;
-    
 }
 
+h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: #27354e;
+}
 
-
-
+main{
+    display: flex;
+    flex-direction: column;
+}
+.alineacion-main{
+    display: flex;
+    flex-direction: column;
+}
+.alineacion-texto{
+    text-align: center;
+}
+.container-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+.logos{
+    border-radius: 100%;
+    max-width: 150px;
+    padding: 70px;
+}
+.color-diferencial{
+    background-color: white;
+}
+.contacto{
+    display: flex;
+}
+blockquote{
+    background-color: #27917f;
+    margin: 0;
+    width: 100%;
+    color: #f7efdd;
+}
+footer{
+    background-color:#77c0b4;
+}
+.navegacion-footer{
+    display: flex;
+    justify-content: space-evenly;
+}

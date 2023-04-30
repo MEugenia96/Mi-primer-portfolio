@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maria Eugenia</title>
     <link rel="stylesheet" href="styleportfolio.css">
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
         <a href="#hola" class="items-nav"> Hola </a>
         <a href="#conocimientos" class="items-nav"> Conocimientos </a>
         <a href="#proyectos" class="items-nav"> Proyectos </a>
-        <a href="#contacto" class="contacto"> Contacto </a>
+        <a href="#contacto" class="boton-contacto"> Contacto </a>
     </div> 
     
     <a name="hola"></a>
@@ -36,28 +36,50 @@
     </header>
     
     <main>
-        <section>
-            <h3>
+        <a name="conocimientos"></a>
+        <section class="alineacion-main color-diferencial">
+            <h3 class="alineacion-texto">
                 Mis conocimientos
             </h3>
-            <p>
+            <p class="alineacion-texto">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, dicta!
             </p>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
+            <div class="container-logos">
+               <figure>
+                <img src="Logo html.jpeg" alt="logo-html" class="logos">
+                <figcaption>HTML 5</figcaption>
+               </figure>
+               <figure>
+                <img src="Logo css.jpeg" alt="logo-css"class="logos">
+                <figcaption>CSS 3</figcaption>
+               </figure>
+               <figure>
+                <img src="Logo sass.jpeg" alt="logo-sass" class="logos">
+                <figcaption>Sass</figcaption>
+               </figure>
+               <figure>
+                <img src="Logo js.jpeg" alt="logo-js" class="logos">
+                <figcaption>JavaScript</figcaption>
+               </figure>
+               <figure>
+                <img src="Logo react.jpeg" alt="logo-react" class="logos">
+                <figcaption>React</figcaption>
+               </figure>
+               <figure>
+                <img src="Logo git.jpeg" alt="logo-git" class="logos">
+                <figcaption>GIT</figcaption>
+               </figure>
+            </div>
         </section>
-        <blockquote>
+        <blockquote class="alineacion-main alineacion-texto">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut ea veniam consequuntur, officia voluptatem! Nostrum reprehenderit earum enim aliquam quam repudiandae tenetur, hic, sed totam sequi excepturi laboriosam veniam.
         </blockquote>
-        <section>
-            <h3>
+        <a name="proyectos"></a>
+        <section class="alineacion-main">
+            <h3 class="alineacion-texto">
                 Mis proyectos
             </h3>
-            <p>
+            <p class="alineacion-texto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit.
             </p>
             <aricle></aricle>
@@ -68,7 +90,30 @@
             <aricle></aricle>
             <aricle></aricle>
         </section>
+        <a name="contacto"></a>
+        <section class="contacto">
+            <div>
+                <h3>Contactame</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis vero veniam assumenda vel hic nesciunt id numquam, ut placeat reprehenderit.</p>
+                <ul>
+                    <li>eugeniaortiz162@gmail.com</li>
+                    <li>Git Hub</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Escribime</h3>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="navegacion-footer">
+            <a href="#hola"> Hola </a>
+            <a href="#conocimientos">Conocimientos</a>
+            <a href="#proyectos"> Proyectos </a>
+            <a href="#contacto"> Contacto </a>
+        </div> 
+    </footer>
     
 </body>
 </html>
