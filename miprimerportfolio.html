@@ -6,32 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Eugenia</title>
     <link rel="stylesheet" href="styleportfolio.css">
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href= link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51e25768ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="barra-navegacion">
-        <a href="#hola" class="items-nav"> Hola </a>
-        <a href="#conocimientos" class="items-nav"> Conocimientos </a>
-        <a href="#proyectos" class="items-nav"> Proyectos </a>
-        <a href="#contacto" class="boton-contacto"> Contacto </a>
+        <ul class="lista-barra-nav">
+            <li>
+                <a href="#hola" class="items-nav"> Hola </a>
+            </li>
+            <li>
+                <a href="#conocimientos" class="items-nav"> Conocimientos </a>
+            </li>
+            <li>
+                <a href="#proyectos" class="items-nav"> Proyectos </a>
+            </li>
+            <li>
+                <a href="#contacto" class="boton-contacto"> Contacto </a>
+            </li>
+        </ul>
     </div> 
     
     <a name="hola"></a>
-    <header class="identidad-sitio">
-        <div class="descripcion">
+    <header class="portada-sitio">
+        <div class="descripcion-personal">
             <h2>
-                ¡Hola! Soy Eugenia
+                ¡Hola! <br/>
+                Soy Eugenia
             </h2>
-            <p class="parrafos">
+            <p class="parrafo-portada">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolore, incidunt porro repellat sed et saepe natus cupiditate repudiandae quia.
             </p>
             <input type="button" value="Lo que hago" class="boton">
         </div>
-        
-        <div class="imagen">
-            <img src="C:\Users\Toshiba\Desktop\ADA\PORTFOLIO\imagenport.jpeg" alt="imagen ilustrativa">
+        <div class="imagen-portada">
+            <img src="undraw_projections_re_ulc6.svg" alt="imagen ilustrativa" width="400" height="400">
         </div>
     </header>
     
@@ -44,35 +55,40 @@
             <p class="alineacion-texto">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, dicta!
             </p>
-            <div class="container-logos">
-               <figure>
-                <img src="Logo html.jpeg" alt="logo-html" class="logos">
-                <figcaption>HTML 5</figcaption>
-               </figure>
-               <figure>
-                <img src="Logo css.jpeg" alt="logo-css"class="logos">
-                <figcaption>CSS 3</figcaption>
-               </figure>
-               <figure>
-                <img src="Logo sass.jpeg" alt="logo-sass" class="logos">
-                <figcaption>Sass</figcaption>
-               </figure>
-               <figure>
-                <img src="Logo js.jpeg" alt="logo-js" class="logos">
-                <figcaption>JavaScript</figcaption>
-               </figure>
-               <figure>
-                <img src="Logo react.jpeg" alt="logo-react" class="logos">
-                <figcaption>React</figcaption>
-               </figure>
-               <figure>
-                <img src="Logo git.jpeg" alt="logo-git" class="logos">
-                <figcaption>GIT</figcaption>
-               </figure>
+            <div class="container-log-img">
+                <figure>
+                    <img src="Logo html.jpeg" alt="logo-html" class="logos">
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="Logo css.jpeg" alt="logo-css"class="logos">
+                    <figcaption>CSS 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="Logo sass.jpeg" alt="logo-sass" class="logos">
+                    <figcaption>Sass</figcaption>
+                </figure>
+                <figure>
+                    <img src="Logo js.jpeg" alt="logo-js" class="logos">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="Logo react.jpeg" alt="logo-react" class="logos">
+                    <figcaption>React</figcaption>
+                </figure>
+                <figure>
+                    <img src="Logo git.jpeg" alt="logo-git" class="logos">
+                    <figcaption>GIT</figcaption>
+                </figure>
             </div>
         </section>
-        <blockquote class="alineacion-main alineacion-texto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut ea veniam consequuntur, officia voluptatem! Nostrum reprehenderit earum enim aliquam quam repudiandae tenetur, hic, sed totam sequi excepturi laboriosam veniam.
+        <blockquote class="alineacion-main cita">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut ea veniam consequuntur, officia voluptatem! Nostrum reprehenderit earum enim aliquam quam repudiandae tenetur, hic, sed totam sequi excepturi laboriosam veniam.
+            </p>
+            <p class="autor-cita">
+                Sofía.
+            </p>
         </blockquote>
         <a name="proyectos"></a>
         <section class="alineacion-main">
@@ -82,13 +98,21 @@
             <p class="alineacion-texto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit.
             </p>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
-            <aricle></aricle>
+            <div class="container-log-img">
+                <aricle>
+                    <img src="" alt="portfolio" class="img-proyecto">
+                    <h4>Portfolio</h4>
+                </aricle>
+                <aricle>
+                    <img src="" alt="generador" class="img-proyecto">
+                    <h4>Generador de memes</h4>
+                </aricle>
+                <aricle></aricle>
+                <aricle></aricle>
+                <aricle></aricle>
+                <aricle></aricle>
+                <aricle></aricle>
+            </div>
         </section>
         <a name="contacto"></a>
         <section class="contacto">

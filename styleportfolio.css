@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    /* display: flex; */
     height: 100vh;
     background-color: #f7efdd;
     font-family: Indie Flower;
@@ -13,53 +12,54 @@ body{
     height: 50px;
     align-items: center;
     position: absolute;
-    justify-content: space-evenly;
     font-size: 20px;
 }
+.lista-barra-nav{
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+}
 .items-nav{
-    margin:0;
-    padding: 0;
+    margin:10px;
+    padding: 20px;
     text-decoration: none;
     color: #27354e;
 }
 .boton-contacto{
     padding: 6px;
-    background-color: #e8a503 ;
+    background-color: #e89eba ;
     text-decoration: none;
     color: #27354e;
     border-radius: 6px;
 }
-.identidad-sitio{
+.portada-sitio{
     display: flex;
     justify-content: center;
-    /* margin-top: 60px; */
-    padding: 40px;
+    padding: 45px;
     align-items: center;
     width: 100%;
 }
-.descripcion{
+.descripcion-personal{
     display: flex;
     flex-direction: column;
     text-align: center;
     flex-grow: 20;
     height: 480px;
-    width: 479px;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    flex-grow: 10;
+    padding: 50px;
 }
-.imagen{
+.imagen-portada{
     margin:0;
-    padding: 30px;
-    flex-grow: 10;
+    padding: 100px;
+    margin-right: 100px;
 }
 h2{
     font-size: 70px;
     font-weight: 900;
     color: #27917f  ;
 }
-.parrafos{
+.parrafo-portada{
     font-size: 20px;
     font-weight: 400;
     padding: 10px;
@@ -95,7 +95,7 @@ main{
 .alineacion-texto{
     text-align: center;
 }
-.container-logos{
+.container-log-img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,8 +105,8 @@ main{
 }
 .logos{
     border-radius: 100%;
-    max-width: 150px;
-    padding: 70px;
+    max-width: 100px;
+    padding: 50px;
 }
 .color-diferencial{
     background-color: white;
@@ -114,11 +114,18 @@ main{
 .contacto{
     display: flex;
 }
-blockquote{
+.cita{
     background-color: #27917f;
     margin: 0;
-    width: 100%;
+    padding: 100px;
     color: #f7efdd;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.autor-cita{
+    font-size: 35px;
+    font-weight: 600;
 }
 footer{
     background-color:#77c0b4;
@@ -126,4 +133,9 @@ footer{
 .navegacion-footer{
     display: flex;
     justify-content: space-evenly;
+}
+
+.img-proyecto{
+    width: 100x;
+    height: 100px;
 }
