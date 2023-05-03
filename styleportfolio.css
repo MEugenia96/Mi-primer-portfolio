@@ -40,7 +40,7 @@ body{
     width: 100%;
 }
 .descripcion-personal{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     text-align: center;
     flex-grow: 20;
@@ -48,8 +48,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 50px;
-}
+} 
 .imagen-portada{
+    display: flex;
     margin:0;
     padding: 100px;
     margin-right: 100px;
