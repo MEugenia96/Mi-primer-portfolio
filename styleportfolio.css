@@ -4,6 +4,8 @@ body{
     background-color: #f7efdd;
     font-family: Indie Flower;
 }
+
+/*HEADER*/ 
 .barra-navegacion{
     display: flex;
     justify-content: flex-end;
@@ -54,6 +56,7 @@ body{
     margin:0;
     padding: 100px;
     margin-right: 100px;
+    flex-grow: 20;
 }
 h2{
     font-size: 70px;
@@ -74,10 +77,15 @@ h2{
     border-radius: 15px;
     border: 0;
 }
+
+/*MAIN*/
 main{
     display: flex;
     flex-direction: column;
 }
+
+/*SECCIÓN "Mis conocimientos"*/
+
 
 h3{
     font-size: 40px;
@@ -85,33 +93,63 @@ h3{
     color: #27354e;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-.alineacion-main{
-    display: flex;
-    flex-direction: column;
-}
 .alineacion-texto{
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.color-diferencial{
+    background-color: white;
 }
 .container-log-img{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-evenly;
     font-size: 20px;
-    font-weight: 300;
+    padding-left: 20%;
+    padding-right: 20%;
 }
-.logos{
-    border-radius: 100%;
-    max-width: 100px;
-    padding: 50px;
+/*Diseño logos*/
+h4{
+    margin: 0;
 }
-.color-diferencial{
-    background-color: white;
+.card-logo{
+    border: #27354e solid 1px;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
 }
+.fa-html5{
+    color: orangered;
+    font-size: 100px;
+    padding: 15px;
+}
+.fa-css3-alt{
+    color: blue;
+    font-size: 100px;
+    padding: 15px;
+}
+.fa-sass{
+    color: rgb(231, 56, 193);
+    font-size: 80px;
+    padding: 15px;
+}
+.fa-square-js{
+    color: rgb(245, 245, 52);
+    font-size: 100px;
+    padding: 15px;
+}
+.fa-react{
+    color: rgb(19, 185, 250);
+    font-size: 100px;
+    padding: 15px;
+}
+.fa-git-alt{
+    color: rgb(156, 4, 4);
+    font-size: 100px;
+    padding: 15px;
+}
+
 .contacto{
     display: flex;
 }
