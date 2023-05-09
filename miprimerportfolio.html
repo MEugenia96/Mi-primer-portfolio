@@ -42,15 +42,15 @@
                 </p>
                 <input type="button" value="Lo que hago" class="boton">
             </article>
-            <article class="imagen-portada">
-                <img src="undraw_projections_re_ulc6.svg" alt="imagen ilustrativa" width="400" height="400">
-            </article>
+            <figure class="imagen-portada"> 
+                <img src="undraw_projections_re_ulc6.svg" alt="imagen ilustrativa" class="img-principal">
+            </figure>
         </div>
     </header>
     
     <main>
         <a name="conocimientos"></a>
-        <section class="color-diferencial">
+        <section class="container-conocimientos separacion-secciones">
             <h3 class="alineacion-texto">
                 Mis conocimientos
             </h3>
@@ -58,37 +58,37 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, dicta!
             </p>
             <div class="container-log-img">
-                <article class="card-logo">
+                <article class="card-logo-img">
                     <i class="fa-brands fa-html5"></i>
                     <h4 class="alineacion-texto">
                         HTML 5
                     </h4>
                 </article>
-                <article class="card-logo">
+                <article class="card-logo-img">
                     <i class="fa-brands fa-css3-alt"></i>
                     <h4 class="alineacion-texto">
                         CSS 3
                     </h4>
                 </article>
-                <article class="card-logo">
+                <article class="card-logo-img">
                     <i class="fa-brands fa-sass"></i>
                     <h4 class="alineacion-texto">
                         Sass
                     </h4>
                 </article>
-                <article class="card-logo">
+                <article class="card-logo-img">
                     <i class="fa-brands fa-square-js"></i>
                     <h4 class="alineacion-texto">
                         JavaScript
                     </h4>
                 </article>
-                <article class="card-logo">
+                <article class="card-logo-img">
                     <i class="fa-brands fa-react"></i>
                     <h4 class="alineacion-texto">
                         React
                     </h4>
                 </article>
-                <article class="card-logo">
+                <article class="card-logo-img">
                     <i class="fa-brands fa-git-alt"></i>
                     <h4 class="alineacion-texto">
                         GIT
@@ -97,15 +97,16 @@
             </div>
         </section>
         <blockquote class="cita">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut ea veniam consequuntur, officia voluptatem! Nostrum reprehenderit earum enim aliquam quam repudiandae tenetur, hic, sed totam sequi excepturi laboriosam veniam.
+            <i class="fa-solid fa-quote-right"></i>
+            <p class="parrafo-portada separacion-secciones">
+                Sólo las personas que se atreven a ir demasiado lejos logran descubrir hasta dónde pueden llegar.
             </p>
             <p class="autor-cita">
-                Sofía.
+                T.S. Eliot
             </p>
         </blockquote>
         <a name="proyectos"></a>
-        <section>
+        <section class="separacion-secciones">
             <h3 class="alineacion-texto">
                 Mis proyectos
             </h3>
@@ -113,23 +114,38 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit.
             </p>
             <div class="container-log-img">
-                <aricle>
-                    <img src="" alt="portfolio" class="img-proyecto">
+                <aricle class="card-logo-img">
+                    <img src="undraw_projections_re_ulc6.svg" alt="portfolio" class="img-proyecto">
                     <h4>Portfolio</h4>
                 </aricle>
-                <aricle>
-                    <img src="" alt="generador" class="img-proyecto">
+                <aricle class="card-logo-img">
+                    <img src="generadormemes.svg" alt="generador" class="img-proyecto">
                     <h4>Generador de memes</h4>
                 </aricle>
-                <aricle></aricle>
-                <aricle></aricle>
-                <aricle></aricle>
-                <aricle></aricle>
-                <aricle></aricle>
+                <aricle class="card-logo-img">
+                    <img src="match.svg" alt="match" class="img-proyecto">
+                    <h4>Match 3</h4>
+                </aricle>
+                <aricle class="card-logo-img">
+                    <img src="gastos.svg" alt="gastos" class="img-proyecto">
+                    <h4>Controlador de gastos</h4>
+                </aricle>
+                <aricle class="card-logo-img">
+                    <img src="calendario.svg" alt="calendario" class="img-proyecto">
+                    <h4>Adm de reuniones</h4>
+                </aricle>
+                <aricle class="card-logo-img">
+                    <img src="app_m-9-ms.svg" alt="app" class="img-proyecto">
+                    <h4>Todo app</h4>
+                </aricle>
+                <aricle class="card-logo-img">
+                    <img src="movie_night_re_9umk.svg" alt="peliculas" class="img-proyecto">
+                    <h4>Buscador de peliculas</h4>
+                </aricle>
             </div>
         </section>
         <a name="contacto"></a>
-        <section class="contacto">
+        <section class="contacto separacion-secciones">
             <div>
                 <h3>Contactame</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis vero veniam assumenda vel hic nesciunt id numquam, ut placeat reprehenderit.</p>
@@ -145,7 +161,7 @@
         </section>
     </main>
     <footer>
-        <div class="navegacion-footer">
+        <div class="navegacion-footer separacion-secciones">
             <a href="#hola"> Hola </a>
             <a href="#conocimientos">Conocimientos</a>
             <a href="#proyectos"> Proyectos </a>

@@ -1,25 +1,26 @@
 body{
     margin: 0;
-    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
     background-color: #f7efdd;
     font-family: Indie Flower;
 }
 
 /*HEADER*/ 
+
 .barra-navegacion{
     display: flex;
     justify-content: flex-end;
     width: 100%;
     box-shadow:rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    height: 50px;
     align-items: center;
-    position: absolute;
     font-size: 20px;
+    margin-bottom: 5%;
 }
 .lista-barra-nav{
     display: flex;
     list-style: none;
-    margin-right: 100px;
+    padding-right: 10%;
 }
 .items-nav{
     margin:10px;
@@ -34,39 +35,45 @@ body{
     color: #27354e;
     border-radius: 6px;
 }
+
+@media (max-width:400px){
+    .lista-barra-nav{
+        display: none;
+    }
+}
 .portada-sitio{
     display: flex;
-    justify-content: center;
-    padding: 45px;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
 }
 .descripcion-personal{
     display: flex; 
     flex-direction: column;
     text-align: center;
-    flex-grow: 20;
     height: 480px;
+    width: 45%;
     align-items: center;
-    justify-content: center;
-    padding: 50px;
+    justify-content: space-around;
 } 
 .imagen-portada{
     display: flex;
     margin:0;
-    padding: 100px;
-    margin-right: 100px;
-    flex-grow: 20;
+    justify-content: center;
+    height: 480px;
+    width: 45%;
+}
+.img-principal{
+    width: 100%;
 }
 h2{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
-    color: #27917f  ;
+    color: #27917f;
 }
 .parrafo-portada{
     font-size: 20px;
     font-weight: 400;
-    padding: 10px;
+    width: 100%;
 }
 .boton{
     background-color: #77c0b4;
@@ -78,10 +85,26 @@ h2{
     border: 0;
 }
 
+@media (max-width:400px){
+    .portada-sitio{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:400px){
+    .descripcion-personal{
+        width: 100vw;
+    }
+}
+
 /*MAIN*/
 main{
     display: flex;
     flex-direction: column;
+}
+
+.separacion-secciones{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 /*SECCIÓN "Mis conocimientos"*/
@@ -98,7 +121,7 @@ h3{
     flex-wrap: wrap;
 }
 
-.color-diferencial{
+.container-conocimientos{
     background-color: white;
 }
 .container-log-img{
@@ -113,11 +136,12 @@ h3{
 h4{
     margin: 0;
 }
-.card-logo{
+.card-logo-img{
     border: #27354e solid 1px;
     width: 200px;
     text-align: center;
     margin: 20px;
+    background-color: white;
 }
 .fa-html5{
     color: orangered;
@@ -153,6 +177,13 @@ h4{
 .contacto{
     display: flex;
 }
+
+/*Cita*/
+
+.fa-quote-right{
+    color: white;
+    font-size: 70px;
+}
 .cita{
     background-color: #27917f;
     margin: 0;
@@ -175,6 +206,6 @@ footer{
 }
 
 .img-proyecto{
-    width: 100x;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
