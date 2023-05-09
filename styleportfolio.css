@@ -11,6 +11,7 @@ body{
 .barra-navegacion{
     display: flex;
     justify-content: flex-end;
+    background-color: #2f2e41;
     width: 100%;
     box-shadow:rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     align-items: center;
@@ -21,16 +22,17 @@ body{
     display: flex;
     list-style: none;
     padding-right: 10%;
+    font-weight:500;
 }
 .items-nav{
     margin:10px;
     padding: 20px;
     text-decoration: none;
-    color: #27354e;
+    color:#f7efdd;
 }
 .boton-contacto{
     padding: 6px;
-    background-color: #e89eba ;
+    background-color: #e97ea7 ;
     text-decoration: none;
     color: #27354e;
     border-radius: 6px;
@@ -53,7 +55,7 @@ body{
     height: 480px;
     width: 45%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 } 
 .imagen-portada{
     display: flex;
@@ -68,19 +70,21 @@ body{
 h2{
     font-size: 50px;
     font-weight: 900;
-    color: #27917f;
+    color: black;
+    margin: 0;
 }
 .parrafo-portada{
     font-size: 20px;
     font-weight: 400;
     width: 100%;
+    margin: 0;
 }
 .boton{
-    background-color: #77c0b4;
+    background-color: #F9A826;
     padding: 15px;
     font-family: Indie Flower;
     font-size: 20px;
-    font-weight: 500;
+    font-weight:600;
     border-radius: 15px;
     border: 0;
 }
@@ -181,11 +185,11 @@ h4{
 /*Cita*/
 
 .fa-quote-right{
-    color: white;
+    color: #e97ea7;
     font-size: 70px;
 }
 .cita{
-    background-color: #27917f;
+    background-color: #2f2e41;
     margin: 0;
     padding: 100px;
     color: #f7efdd;
@@ -198,7 +202,7 @@ h4{
     font-weight: 600;
 }
 footer{
-    background-color:#77c0b4;
+    background-color:#e7b564;
 }
 .navegacion-footer{
     display: flex;
