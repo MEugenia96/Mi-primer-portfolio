@@ -3,7 +3,7 @@ body{
     width: 100vw;
     overflow-x: hidden;
     background-color: #f7efdd;
-    font-family: Indie Flower;
+    font-family: Inconsolata;
 }
 
 /*HEADER*/ 
@@ -39,6 +39,12 @@ body{
 }
 
 @media (max-width:400px){
+    .barra-navegacion{
+        width: 100vw;
+        height: 10vh;
+        box-shadow:rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        margin-bottom: 15%;
+    }
     .lista-barra-nav{
         display: none;
     }
@@ -65,7 +71,7 @@ body{
     width: 45%;
 }
 .img-principal{
-    width: 100%;
+    width: 50vw;
 }
 h2{
     font-size: 50px;
@@ -73,6 +79,7 @@ h2{
     color: black;
     margin: 0;
 }
+
 .parrafo-portada{
     font-size: 20px;
     font-weight: 400;
@@ -97,6 +104,17 @@ h2{
 @media (max-width:400px){
     .descripcion-personal{
         width: 100vw;
+        height: 50%;
+        margin-bottom: 20%;
+        justify-content: space-between;
+    }
+    .parrafo-portada{
+        margin: 20%;
+    }
+    .imagen-portada{
+        width: 100vw;
+        height: 50%;
+        margin-bottom: 20%;
     }
 }
 
