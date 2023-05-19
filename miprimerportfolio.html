@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Eugenia</title>
     <link rel="stylesheet" href="styleportfolio.css">
-    <link rel="stylesheet" href="link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href=link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -30,11 +30,11 @@
                 </li>
             </ul>
         </nav> 
-    
-        <a name="hola"></a>
     </header>
-    
+
+
     <main>
+        <a name="hola"></a>
         <section class="portada-sitio">
             <article class="descripcion-personal">
                 <h2>
@@ -102,7 +102,7 @@
         </section>
         <blockquote class="cita">
             <i class="fa-solid fa-quote-right"></i>
-            <p class="parrafo-portada-cita separacion-secciones">
+            <p class="separacion-secciones">
                 Las circunstancias externas pueden despojarnos de todo, salvo de <br/> 
                 la libertad de elegir como responder ante esas circunstancias.
             </p>
@@ -164,22 +164,25 @@
             </div>
             <div class="container-form">
                 <h3>Escribime</h3>
-                <form>
-                    <label for="nombre"> Nombre *
+                <form id="formulario-portfolio">
+                    <div class="inserte-nombre">
+                        <label for="nombre"> Nombre * <br/>
                         <input id="nombre" type="text">
-                    </label>
-                    <label for="apellido"> Apellido *
+                        </label>
+                        <label for="apellido"> Apellido * <br/>
                         <input id="apellido" type="text">
-                    </label>
-                    <label for="email"> Email *
+                        </label>
+                    </div>
+                    <div class="correo-mensaje">
+                        <label for="email"> Email * <br/>
                         <input id="email" type="email">
-                    </label>
-                    <label for="mensaje"> Mensaje *
+                        </label>
+                        <label for="mensaje"> Mensaje * <br/>
                         <textarea>
                             Escriba aquí su mensaje
                         </textarea>
                     </label>
-                    
+                </div>
                 </form>
             </div>
         </section>
