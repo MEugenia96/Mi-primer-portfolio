@@ -2,6 +2,9 @@ a{
     text-decoration: none;
     color: #27354e;
 }
+li{
+    list-style: none;
+}
 
 
 body{
@@ -41,7 +44,7 @@ header{
     padding: 20px;
     color:#f7efdd;
 }
-.boton-contacto{
+.contacto-nav{
     padding: 6px;
     background-color: #e97ea7 ;
     text-decoration: none;
@@ -52,7 +55,7 @@ header{
 .items-nav:hover{
     color: #F9A826;
 }
-.boton-contacto:hover{
+.contacto-nav:hover{
     background-color: #F9A826;
 }
 
@@ -74,13 +77,13 @@ main{
     display: flex;
     flex-direction: column;
 }
-.portada-sitio{
+.container-portada{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 6%;
 }
-.descripcion-personal{
+.descripcion-portada{
     display: flex; 
     flex-direction: column;
     text-align: center;
@@ -115,14 +118,12 @@ h2{
     text-align: center;
 }
 
-
-
 .parrafo-portada{
-    font-size: 100%;
+    font-size: 120%;
     font-weight:400;
     width: 100%;
 }
-.boton{
+.boton-portada{
     background-color: #F9A826;
     color: black;
     padding: 15px;
@@ -138,12 +139,12 @@ h2{
 }
 
 @media (max-width:540px){
-    .portada-sitio{
+    .container-portada{
         flex-wrap: wrap;
     }
 }
 @media (max-width:540px){
-    .descripcion-personal{
+    .descripcion-portada{
         width: 100vw;
         height: 50%;
         margin-bottom: 20%;
@@ -173,10 +174,10 @@ h2{
 /*SECCIÓN "Mis conocimientos"*/
 
 
-h3{
+.titulo-secundario{
     font-size: 200%;
     font-weight: 600;
-    color: #27354e;
+    color: black;
 }
 
 .alineacion-texto{
@@ -185,7 +186,7 @@ h3{
     margin-top: 3%;
 }
 
-.container-conocimientos{
+.color-diferencial{
     background-color: whitesmoke;
 }
 .container-log-img{
@@ -229,7 +230,7 @@ h4{
 }
 .fa-sass{
     color: rgb(231, 56, 193);
-    font-size: 80px;
+    font-size: 100px;
     padding: 15px;
 }
 .fa-square-js{
@@ -255,6 +256,7 @@ h4{
 .fa-quote-right{
     color: #e97ea7;
     font-size: 70px;
+    padding-bottom: 5%;
 }
 .cita{
     background-color: #2f2e41;
@@ -275,7 +277,7 @@ h4{
 
 .card-img{
     width: 250px;
-    height: 200px;
+    /* height: 200px; */
     padding: 4%;
     background-color: #f7efdd;
     text-align: center;
@@ -295,13 +297,15 @@ h4{
 
 /*SECCION CONTACTO*/
 
-.contacto{
+.container-contacto{
     display: flex;
     flex-wrap: wrap;
     background-color: whitesmoke;
     padding: 10%;
+    justify-content: center;
+    border: solid 0.5px #f7efdd;
 }
-.container-form, .container-contacto{
+.contacto-form{
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -309,11 +313,42 @@ h4{
     /* justify-content: center; */
     background-color: #f7efdd;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.contacto-redes{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 480px;
+    background-color: #f7efdd;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+@media (max-width:540px){
+    .contacto-redes, .contacto-form{
+        width: 100vw;
+        height: 50%;
+        padding: 0%;
+    }
+    .inserte-nombre{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
 }
 
 #formulario-portfolio{
-    width: 480px;
     text-align: center;
+    justify-content: space-evenly;
+}
+
+#formulario-portfolio label{
+    padding: 2%;
+    font-weight:600;
+    margin-top: 2%;
 }
 
 .inserte-nombre{
@@ -326,23 +361,34 @@ h4{
     flex-direction: column;
     text-align: start;
     align-items:flex-start;
-    margin-left: 8.5%;
-    width: 480px;
+    margin-left: 2%;
 }
+
+
 
 #nombre, #apellido{
-    height: 70%;
-    border-radius: 15%;
+    /* height: 70%; */
+    border-radius: 10%;
     border: #F9A826 1px solid;
 }
 
-#email{
-    height: 70%;
-    border-radius: 15%;
+#email, #mensaje{
+    /* height: 70%; */
+    border-radius: 10%;
     border: #F9A826 1px solid;
-    width: 220%;
 }
 
+
+.boton-enviar{
+    background-color: #F9A826;
+    color: black;
+    margin: 10%;
+    margin-left: 0%;
+    font-weight:600;
+    /* border: 1px solid #27354e; */
+    border-radius: 25px;
+    box-shadow: 2px 3px 2px #27354e;
+}
 /*FOOTER*/
 
 footer{

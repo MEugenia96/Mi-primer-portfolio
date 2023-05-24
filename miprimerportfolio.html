@@ -26,7 +26,7 @@
                     <a href="#proyectos" class="items-nav"> Proyectos </a>
                 </li>
                 <li>
-                    <a href="#contacto" class="boton-contacto"> Contacto </a>
+                    <a href="#contacto" class="contacto-nav"> Contacto </a>
                 </li>
             </ul>
         </nav> 
@@ -35,8 +35,8 @@
 
     <main>
         <a name="hola"></a>
-        <section class="portada-sitio">
-            <article class="descripcion-personal">
+        <section class="container-portada">
+            <div class="descripcion-portada">
                 <h2>
                     ¡Hola! <br/>
                     <strong class="titulo-principal">Soy Eugenia</strong>
@@ -45,22 +45,24 @@
                     Técnica en administración, estudiante de progamación y una amante de los libros.
                 </p>
                 <a href="#proyectos">
-                    <input type="button" value="Lo que hago" class="boton">
+                    <input type="button" value="Lo que hago" class="boton-portada">
                 </a>
-            </article>
+            </div>
             <figure class="imagen-portada"> 
                 <img src="undraw_processing_thoughts_d8ha.svg" alt="imagen ilustrativa" class="img-principal">
             </figure>
         </section>
     
         <a name="conocimientos"></a>
-        <section class="container-conocimientos separacion-secciones">
-            <h3 class="alineacion-texto">
-                Mis conocimientos
-            </h3>
-            <p class="alineacion-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, dicta!
-            </p>
+        <section class="color-diferencial separacion-secciones">
+            <div class="alineacion-texto">
+                <h3 class="titulo-secundario">
+                    Mis conocimientos
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, dicta!
+                </p>
+            </div>
             <div class="container-log-img">
                 <article class="card-logo">
                     <i class="fa-brands fa-html5"></i>
@@ -102,8 +104,8 @@
         </section>
         <blockquote class="cita">
             <i class="fa-solid fa-quote-right"></i>
-            <p class="separacion-secciones">
-                Las circunstancias externas pueden despojarnos de todo, salvo de <br/> 
+            <p>
+                Las circunstancias externas pueden despojarnos de todo, salvo de 
                 la libertad de elegir como responder ante esas circunstancias.
             </p>
             <p class="autor-cita">
@@ -112,12 +114,14 @@
         </blockquote>
         <a name="proyectos"></a>
         <section class="separacion-secciones">
-            <h3 class="alineacion-texto">
-                Mis proyectos
-            </h3>
-            <p class="alineacion-texto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit.
-            </p>
+            <div class="alineacion-texto">
+                <h3 class="titulo-secundario">
+                    Mis proyectos
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit.
+                </p>
+            </div>
             <div class="container-log-img">
                 <a href="" class="card-img">
                     <img src="undraw_processing_thoughts_d8ha.svg" alt="portfolio" class="img-proyecto">
@@ -150,9 +154,11 @@
             </div>
         </section>
         <a name="contacto"></a>
-        <section class="contacto separacion-secciones">
-            <div class="container-contacto">
-                <h3>Contactame</h3>
+        <section class="container-contacto separacion-secciones">
+            <div class="contacto-redes">
+                <h3 class="titulo-secundario">
+                    Contactame
+                </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis vero veniam assumenda vel hic nesciunt id numquam, ut placeat reprehenderit.
                 </p>
@@ -162,8 +168,10 @@
                     <li>Linkedin</li>
                 </ul>
             </div>
-            <div class="container-form">
-                <h3>Escribime</h3>
+            <div class="contacto-form">
+                <h3 class="titulo-secundario">
+                    Escribime
+                </h3>
                 <form id="formulario-portfolio">
                     <div class="inserte-nombre">
                         <label for="nombre"> Nombre * <br/>
@@ -178,11 +186,14 @@
                         <input id="email" type="email">
                         </label>
                         <label for="mensaje"> Mensaje * <br/>
-                        <textarea>
+                        <textarea id="mensaje">
                             Escriba aquí su mensaje
                         </textarea>
-                    </label>
-                </div>
+                        </label>
+                        <label>
+                            <input type="submit" class="boton-enviar">
+                        </label>
+                    </div>
                 </form>
             </div>
         </section>
