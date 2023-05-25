@@ -154,41 +154,61 @@
             </div>
         </section>
         <a name="contacto"></a>
-        <section class="container-contacto ubicacion-row">
+        <section class="ubicacion-row container-contacto">
             <div class="contacto-redes">
-                <h3 class="titulo-secundario">
-                    Contactame
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis vero veniam assumenda vel hic nesciunt id numquam, ut placeat reprehenderit.
-                </p>
-                <ul>
-                    <li>eugeniaortiz162@gmail.com</li>
-                    <li>Git Hub</li>
-                    <li>Linkedin</li>
+                <div class="alineacion-texto">
+                    <h3 class="titulo-secundario">
+                        Contactame
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis vero veniam assumenda vel hic nesciunt id numquam, ut placeat reprehenderit.
+                    </p>
+                </div>
+
+                <ul class="lista-redes">
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-envelope"></i>
+                            eugeniaortiz162@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-github"></i>
+                            Git Hub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                            Linkedin
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="contacto-form">
-                <h3 class="titulo-secundario">
+            <div class="contacto-form ubicacion-column">
+                <h3 class="titulo-secundario alineacion-texto">
                     Escribime
                 </h3>
-                <form id="formulario-portfolio">
-                    <div class="inserte-nombre">
-                        <label for="nombre"> Nombre * <br/>
-                        <input id="nombre" type="text">
+                <form class="formulario-portfolio">
+                    <div class="ubicacion-row form-nombre-completo">
+                        <label> Nombre * <br/>
+                            <input id="nombre" type="text">
                         </label>
-                        <label for="apellido"> Apellido * <br/>
-                        <input id="apellido" type="text">
+                        <label> Apellido * <br/>
+                            <input id="apellido" type="text">
                         </label>
                     </div>
-                    <div class="correo-mensaje">
-                        <label for="email"> Email * <br/>
-                        <input id="email" type="email">
+                    <div class="form-correo">
+                        <label> Email * <br/>
+                            <input id="email" type="email">
                         </label>
-                        <label for="mensaje"> Mensaje * <br/>
-                        <textarea id="mensaje">
-                            Escriba aquí su mensaje
-                        </textarea>
+                    </div>
+                    <div class="form-mensaje ubicacion-column">
+                        <label> Mensaje * <br/>
+                            <textarea id="mensaje">
+                                Escriba aquí su mensaje
+                            </textarea>
                         </label>
                         <label>
                             <input type="submit" class="boton-enviar">
