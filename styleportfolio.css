@@ -30,7 +30,6 @@ body{
 
 
 /*HEADER*/ 
-
 header{
     position: sticky;
     top: 0;
@@ -47,29 +46,44 @@ header{
 }
 
 .lista-barra-nav{
-    list-style: none;
+    /* list-style: none; */
     padding-right: 10%;
     font-weight:500;
 }
 .items-nav{
-    margin:10px;
-    padding: 20px;
+    margin:5px;
+    padding: 10px;
     color:#f7efdd;
 }
 .contacto-nav{
-    padding: 6px;
+    padding: 10px;
+    margin: 7px;
     background-color: #e97ea7 ;
     text-decoration: none;
     color: #27354e;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
+/*Pseudoclases items nav*/
 .items-nav:hover{
     color: #F9A826;
 }
 .contacto-nav:hover{
-    background-color: #F9A826;
+    background-color: #f7a5c4;
 }
+.items-nav:active{
+    border-radius: 10px;
+    box-shadow: -2px 3px 13px 3px rgba(249,168,38,1);
+-webkit-box-shadow: -2px 3px 13px 3px rgba(249,168,38,1);
+-moz-box-shadow: -2px 3px 13px 3px rgba(249,168,38,1);
+}
+.contacto-nav:active{
+    background-color: #e97ea7;
+    box-shadow: -2px 3px 13px 11px rgba(233,126,167,1);
+-webkit-box-shadow: -2px 3px 13px 11px rgba(233,126,167,1);
+-moz-box-shadow: -2px 3px 13px 11px rgba(233,126,167,1);
+}
+
 
 @media (max-width:540px){
     .barra-navegacion{
@@ -83,16 +97,13 @@ header{
     }
 }
 
+
 /*MAIN*/
-
-
 .container-portada{
     justify-content: space-evenly;
     align-items: center;
 }
 .descripcion-portada{
-    /* display: flex;  */
-    /* flex-direction: column; */
     text-align: center;
     height: 480px;
     width: 45%;
@@ -103,12 +114,11 @@ header{
 .titulo-principal{
     color:#F9A826;
     font-weight: 700;
-    font-size: 150%;
+    font-size: 220%;
     text-shadow: 2px 3px 2px rgba(0,0,0,0.8);
 }
 
 .imagen-portada{
-    display: flex;
     margin:0;
     justify-content: center;
     height: 480px;
@@ -118,13 +128,12 @@ header{
     width: 45vw;
 }
 h2{
-    font-size: 300%;
+    font-size: 200%;
     font-weight: 900;
     color: black;
     margin: 0;
     text-align: center;
 }
-
 .parrafo-portada{
     font-size: 120%;
     font-weight:400;
@@ -133,17 +142,27 @@ h2{
 .boton-portada{
     background-color: #F9A826;
     color: black;
+    width: 150px;
     padding: 15px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight:600;
-    /* border: 1px solid #27354e; */
-    border-radius: 25px;
+    border: transparent;
+    border-radius:25px;
     box-shadow: 2px 3px 2px #27354e;
 }
 
+/*Pseudoclases portada*/
 .boton-portada:hover{
-    background-color: #e97ea7;
+    background-color: #f5b754;
 }
+.boton-portada:active{
+    background-color: #ec9913;
+    width: 140px;
+    padding: 13px;
+    font-size: 13px;
+    font-weight:600;
+}
+
 
 @media (max-width:540px){
     .container-portada{
@@ -169,13 +188,14 @@ h2{
     h2{
         width: 80vw;
     }
+    .boton-portada{
+        margin-top: 60px;
+    }
 }
 
 
 
-/*SECCIÓN "Mis conocimientos"*/
-
-
+/*SECCIÓN "MIS CONOCIMIENTOS"*/
 .titulo-secundario{
     font-size: 200%;
     font-weight: 600;
@@ -202,58 +222,51 @@ h2{
 
 /*Diseño logos*/
 h4{
-    margin: 0;
+    margin: 10%;
 }
-.card-logo{
-    border: #27354e solid 1px;
+.card-logo {
+    border: rgb(202, 199, 199) solid 0.5px;
+    border-radius: 10px;
     width: 200px;
     text-align: center;
     margin: 2%;
     background-color: white;
 }
 
-.card-logo:hover{
-    border:#F9A826 1px solid;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.card-img:hover{
-    border:#e97ea7 1px solid;
-}
-.fa-html5{
-    color: orangered;
+.card-logo i{
     font-size: 100px;
     padding: 15px;
+}
+
+.fa-html5{
+    color: orangered;
 }
 .fa-css3-alt{
     color: blue;
-    font-size: 100px;
-    padding: 15px;
 }
 .fa-sass{
     color: rgb(231, 56, 193);
-    font-size: 100px;
-    padding: 15px;
 }
 .fa-square-js{
     color: rgb(245, 245, 52);
-    font-size: 100px;
-    padding: 15px;
 }
 .fa-react{
     color: rgb(19, 185, 250);
-    font-size: 100px;
-    padding: 15px;
 }
 .fa-git-alt{
     color: rgb(187, 17, 17);
-    font-size: 100px;
-    padding: 15px;
+}
+
+/*Pseudoclases logos*/
+.card-logo:hover{
+    border:#F9A826 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #ec9913;
 }
 
 
 
-/*Cita*/
+/*CITA*/
 
 .fa-quote-right{
     color: #e97ea7;
@@ -275,7 +288,7 @@ h4{
 }
 
 
-/*Sección "MIS PROYECTOS"*/
+/*SECCIÓN "MIS PROYECTOS"*/
 
 .card-img{
     width: 250px;
@@ -286,6 +299,10 @@ h4{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 2%;
 }
+.card-img:hover{
+    border:#e97ea7 1px solid;
+}
+
 .img-proyecto{
     width: 80%;
     height: 80%;
@@ -297,7 +314,7 @@ h4{
     }
 }
 
-/*SECCION CONTACTO*/
+/*SECCIÓN CONTACTO*/
 
 .container-contacto{
     flex-wrap: wrap;
