@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styleportfolio.css">
     <link rel="stylesheet" href=link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/51e25768ff.js" crossorigin="anonymous"></script>
 </head>
@@ -102,7 +102,7 @@
                 </article>
             </div>
         </section>
-        <blockquote class="cita">
+        <blockquote class="cita alineacion-texto">
             <i class="fa-solid fa-quote-right"></i>
             <p>
                 Las circunstancias externas pueden despojarnos de todo, salvo de 
@@ -184,36 +184,40 @@
                             Linkedin
                         </a>
                     </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-discord"></i>
+                            Discord
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="contacto-form ubicacion-column">
-                <h3 class="titulo-secundario alineacion-texto">
+            <div class="contacto-form ubicacion-column alineacion-texto">
+                <h3 class="titulo-secundario">
                     Escribime
                 </h3>
                 <form class="formulario-portfolio">
                     <div class="ubicacion-row form-nombre-completo">
                         <label> Nombre * <br/>
-                            <input id="nombre" type="text">
+                            <input id="nombre" type="text" name="nombre" placeholder="  p. ej.: Ada">
                         </label>
                         <label> Apellido * <br/>
-                            <input id="apellido" type="text">
+                            <input id="apellido" type="text" name="apellido" placeholder="  p. ej.: Lovelace">
                         </label>
                     </div>
                     <div class="form-correo">
                         <label> Email * <br/>
-                            <input id="email" type="email">
+                            <input id="email" type="email" name="email" placeholder="  p. ej.: ada.lovelace@gmail.com">
                         </label>
                     </div>
                     <div class="form-mensaje ubicacion-column">
                         <label> Mensaje * <br/>
-                            <textarea id="mensaje">Escriba aquí su mensaje
-                            </textarea>
+                            <textarea id="mensaje" name="mensaje"
+                            placeholder="  Escriba su mensaje aquí"></textarea>
                         </label>
                     </div>
                     <div>
-                        <label>
-                            <input type="submit" class="boton-portada">
-                        </label>
+                        <input type="submit" class="boton-form">
                     </div>
                 </form>
             </div>
@@ -221,10 +225,10 @@
     </main>
     <footer>
         <div class="navegacion-footer ubicacion-row">
-            <a href="#hola"> Hola </a>
-            <a href="#conocimientos">Conocimientos</a>
-            <a href="#proyectos"> Proyectos </a>
-            <a href="#contacto"> Contacto </a>
+            <a href="#hola">HOLA</a>
+            <a href="#conocimientos">CONOCIMIENTOS</a>
+            <a href="#proyectos">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
         </div> 
     </footer>
     
