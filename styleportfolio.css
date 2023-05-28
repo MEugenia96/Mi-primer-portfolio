@@ -2,10 +2,10 @@ a{
     text-decoration: none;
     color: #27354e;
 }
+
 li{
     list-style: none;
 }
-
 
 body{
     margin: 0;
@@ -46,7 +46,6 @@ header{
 }
 
 .lista-barra-nav{
-    /* list-style: none; */
     padding-right: 10%;
     font-weight:500;
 }
@@ -119,6 +118,31 @@ header{
     font-size: 220%;
     text-shadow: 2px 3px 2px rgba(0,0,0,0.8);
 }
+
+@media (max-width: 280px){
+    .titulo-principal{
+        font-size: 150%;
+    }
+}
+
+@media (max-width:280px){
+    blockquote{
+        padding: 0px;
+        margin: 0;
+        /* width: 100vw; */
+    }
+    .cita{
+        font-size: 10%;
+        padding: 2px;
+        text-align: flex-start;
+    }
+    .fa-quote-right{
+        font-size: 30%;
+        padding: 2px;
+    }
+}
+
+
 
 .imagen-portada{
     margin:0;
@@ -355,7 +379,7 @@ h4{
 
 
 .lista-redes{
-    padding: 20px;
+    padding: 20% 0%;
     width: 80%;
     height: 70%;
     justify-content: flex-start;
@@ -363,11 +387,11 @@ h4{
 .lista-redes li{
     /* padding: 3%; */
     font-weight: 400;
-    font-size: 15px;
+    font-size: 17px;
 }
 .lista-redes i{
-    padding: 4%;
-    font-size: 25px;
+    padding: 3%;
+    font-size: 20px;
     color: #f1508e;
 }
 
@@ -387,14 +411,20 @@ h4{
 
 @media (max-width:1024px){
     .contacto-redes, .contacto-form{
-        width: 100vw;
+        /* width: 80vw; */
         height: 50%;
-        padding: 0%;
+        padding: 10%;
     }
     .form-nombre-completo{
         display: flex;
         flex-direction: column;
         padding: 0%;
+    }
+}
+
+@media (max-width:540px){
+    .contacto-redes, .contacto-form{
+        margin: 5%;
     }
 }
 
@@ -501,16 +531,15 @@ textarea{
 /*FOOTER*/
 .container-footer{
     margin-top: 10%;
-    padding: 6%;
+    padding: 3%;
     background-color:#27354e;
 }
 
 .footer-nav{
-    width: 100vw;
     justify-content: center;
 }
 .footer-nav a{
-    margin: 0% 3%;
+    margin: 0% 2%;
     font-weight:400;
     color: #f7efdd;
     /* width: 400px; */
@@ -518,7 +547,7 @@ textarea{
 
 
 .footer-redes ul{
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     margin-top: 2%;
     padding: 0;
@@ -537,9 +566,37 @@ textarea{
 }
 
 .texto-footer{
+    display: flex;
     justify-content: center;
     color: #f7efdd;
     font-weight: 400;
-    margin-left: 50%;
+    margin: 0%;
 }
+
+@media (max-width:300px){
+    .footer-nav {
+        font-size: 70%;
+    }
+    .footer-redes li{
+        margin: 10px
+    }
+    .footer-redes i{
+        font-size: 10px;
+    }
+    .texto-footer{
+        font-size: 70%;
+    }
+}
+
+
+
+/*Pseudoclases footer*/
+
+.footer-redes i:hover{
+    color: #f7efdd;
+    background-color: #27354e;
+    border: #f7efdd solid 0.5px;
+    transition: 0.5s;
+}
+
 
