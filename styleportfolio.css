@@ -30,6 +30,7 @@ body{
 
 
 /*HEADER*/ 
+
 header{
     position: sticky;
     top: 0;
@@ -49,12 +50,14 @@ header{
     padding-right: 10%;
     font-weight:500;
 }
+
 .items-nav{
     margin:5px;
     padding: 10px;
     color:#f7efdd;
     font-size: 16px;
 }
+
 .contacto-nav{
     padding: 10px;
     margin: 7px;
@@ -100,10 +103,12 @@ header{
 
 
 /*MAIN*/
+
 .container-portada{
     justify-content: space-evenly;
     align-items: center;
 }
+
 .descripcion-portada{
     text-align: center;
     height: 480px;
@@ -118,6 +123,7 @@ header{
     font-size: 220%;
     text-shadow: 2px 3px 2px rgba(0,0,0,0.8);
 }
+
 
 @media (max-width: 280px){
     .titulo-principal{
@@ -143,16 +149,17 @@ header{
 }
 
 
-
 .imagen-portada{
     margin:0;
     justify-content: center;
     height: 480px;
     width: 45%;
 }
+
 .img-principal{
     width: 45vw;
 }
+
 h2{
     font-size: 200%;
     font-weight: 900;
@@ -160,11 +167,13 @@ h2{
     margin: 0;
     text-align: center;
 }
+
 .parrafo-portada{
     font-size: 120%;
     font-weight:400;
     width: 100%;
 }
+
 .boton-portada{
     background-color: #F9A826;
     color: #2f2e41;
@@ -187,6 +196,7 @@ h2{
     padding: 13px;
     font-size: 13px;
     font-weight:600;
+    transition-duration: 0.5s;
 }
 
 
@@ -220,8 +230,8 @@ h2{
 }
 
 
-
 /*SECCIÓN "MIS CONOCIMIENTOS"*/
+
 .titulo-secundario{
     font-size: 40px;
     font-weight: 800;
@@ -237,6 +247,7 @@ h2{
 .color-diferencial{
     background-color: whitesmoke;
 }
+
 .container-log-img{
     display: flex;
     flex-wrap: wrap;
@@ -250,6 +261,7 @@ h2{
 h4{
     margin: 10%;
 }
+
 .card-logo {
     border: rgb(202, 199, 199) solid 0.5px;
     border-radius: 10px;
@@ -291,7 +303,6 @@ h4{
 }
 
 
-
 /*CITA*/
 
 .fa-quote-right{
@@ -326,9 +337,6 @@ h4{
     margin: 2%;
     border-radius: 10px;
 }
-.card-img:hover{
-    border:#e97ea7 1px solid;
-}
 
 .card-img h4{
     height: 20%;
@@ -340,11 +348,19 @@ h4{
     height: 80%;
     background-color: #f7efdd;
 }
+
+/*Pseudoclases a proyectos*/
+.card-img:hover{
+    border:#e97ea7 1px solid;
+}
+
+
 @media (max-width:540px) {
     .card-img{
         flex-wrap: wrap;
     }
 }
+
 
 /*SECCIÓN CONTACTO*/
 
@@ -376,36 +392,43 @@ h4{
     margin-top: 10%;
 }
 
-
-
 .lista-redes{
-    padding: 20% 0%;
+    padding: 10% 0%;
     width: 80%;
-    height: 70%;
+    /* height: 70%; */
     justify-content: flex-start;
 }
+
 .lista-redes li{
     /* padding: 3%; */
     font-weight: 400;
     font-size: 17px;
 }
+
+
 .lista-redes i{
-    padding: 3%;
+    padding: 15px;
     font-size: 20px;
-    color: #f1508e;
+    color: #f1508e;;
 }
 
+.lista-redes p{
+    margin-left: 2%;
+}
+.lista-redes .fa-discord{
+    font-size: 16px;
+}
 
 /*Pseudoclases a lista redes*/
-.lista-redes a:hover{
+.lista-redes li:hover p{
     color: #f1508e;
     transition: 0.5s;
 }
-.lista-redes i:hover{
+.lista-redes li:hover i{
     color: #f7efdd;
     background-color: #f1508e;
     border-radius: 100%;
-    transition: 0.5s;
+    transition-duration: 0.5s;
 }
 
 
@@ -520,7 +543,7 @@ textarea{
     padding: 8px;
     font-size: 13px;
     font-weight:600;
-    transition: 1s;
+    transition-duration: 0.5s;
 }
 @media (max-width: 1024px){
     .contacto-redes, .contacto-form{
@@ -559,6 +582,10 @@ textarea{
     font-size: 20px;
     background-color: #f7efdd;
     border-radius: 100%;
+}
+
+.footer-redes .fa-discord{
+    font-size: 18px;
 }
 
 .footer-redes li{
