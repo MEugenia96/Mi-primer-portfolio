@@ -1,28 +1,40 @@
 # Mi primer portfolio
-Se trata de el primer práctico de la carrera FRONTEND ITW, en el cual expondre mi avance sobre las diferentes
-herramientas de desarrollo web, es por ello que su progreso es relativo a mi avance 
+Se trata de el primer práctico a realizar en la carrera FRONTEND ITW.  
 
-![imagen](/match.svg)
+
+En el cual expondré mi avance sobre las diferentes herramientas de desarrollo web, es por ello que se irá perfeccionando de acuerdo
+a mi progreso.
+
+______________________________________________________________________________________________________________________________________
+
+
+![imagen](/organizador.svg)
+
+
+______________________________________________________________________________________________________________________________________
 
 
 ### Primera parte ✔️
-   1. Lenguajes utilizados 
+
+   1. Lenguajes utilizados
    
-       - [x] HTML5
-       - [x] CSS3
+         - [x] HTML5
+         - [x] CSS3  
 
-**En esta primera parte podrán apreciar un portfolio en el que destacan las sig secciones:**
-
-        🖤 PRESENTACIÓN
+   2. Se podrán apreciar las siguientes secciones
+   
+         * BARRA DE NAVEGACIÓN ↗️
          
-        🖤 CONOCIMIENTOS 📝 
+         * BREVE PRESENTACIÓN PERSONAL 💛
          
-        🖤 CITA
+         * CONOCIMIENTOS A ADQUIRIR 📝 
          
-        🖤 PROYECTOS (en construcción🚧) por el momento encontrarán los enlaces a los diferentes proyectos 
-         a desarrollar en este curso
+         * CITA QUE ME REPRESENTA 📖
          
-        🖤 CONTACTOS
+         * PROYECTOS (en construcción🚧) por el momento encontrarán los enlaces a los diferentes proyectos 
+            a desarrollar en este curso
+         
+         * CONTACTOS CON ACCESO A MIS DIFERENTES REDES 💁
 
      
 
