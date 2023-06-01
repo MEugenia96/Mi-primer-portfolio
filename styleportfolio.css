@@ -15,6 +15,7 @@ body{
     font-family: Inconsolata;
 }
 
+
 /*UBICACIÓN EN EL EJE*/
 
 .ubicacion-row{
@@ -189,6 +190,7 @@ h2{
 /*Pseudoclases portada*/
 .boton-portada:hover{
     background-color: #f5b754;
+    cursor: pointer;
 }
 .boton-portada:active{
     background-color: #ec9913;
@@ -229,7 +231,6 @@ h2{
     }
 }
 
-
 /*SECCIÓN "MIS CONOCIMIENTOS"*/
 
 .titulo-secundario{
@@ -242,6 +243,12 @@ h2{
     text-align: center;
     flex-wrap: wrap;
     margin-top: 3%;
+}
+
+@media(max-width:540px){
+    .parrafo-secundario{
+    margin: 7%;
+}
 }
 
 .color-diferencial{
@@ -352,6 +359,7 @@ h4{
 /*Pseudoclases a proyectos*/
 .card-img:hover{
     border:#e97ea7 1px solid;
+    cursor: pointer;
 }
 
 
@@ -392,24 +400,34 @@ h4{
     margin-top: 10%;
 }
 
+
 .lista-redes{
     padding: 10% 0%;
     width: 80%;
-    /* height: 70%; */
     justify-content: flex-start;
 }
 
 .lista-redes li{
-    /* padding: 3%; */
     font-weight: 400;
     font-size: 17px;
 }
-
 
 .lista-redes i{
     padding: 15px;
     font-size: 20px;
     color: #f1508e;;
+}
+
+@media (max-width: 300px){
+    .lista-redes li{
+        font-size: 10px;
+    }
+    .lista-redes i{
+        font-size: 15px ;
+    }
+    .lista-redes .fa-discord{
+        font-size: 10px;
+    }
 }
 
 .lista-redes p{
@@ -423,18 +441,19 @@ h4{
 .lista-redes li:hover p{
     color: #f1508e;
     transition: 0.5s;
+    cursor: pointer;
 }
 .lista-redes li:hover i{
     color: #f7efdd;
     background-color: #f1508e;
     border-radius: 100%;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 
 @media (max-width:1024px){
     .contacto-redes, .contacto-form{
-        /* width: 80vw; */
         height: 50%;
         padding: 10%;
     }
@@ -455,7 +474,6 @@ h4{
     text-align: center;
     justify-content: space-evenly;
     width: 100%;
-    /* border: #27354e solid 0.5px; */
 }
 
 .formulario-portfolio label{
@@ -506,6 +524,7 @@ textarea{
     margin-top: 2%;
 }
 
+
 .form-mensaje textarea{
     width: 100%;
     height: 80%;
@@ -536,6 +555,7 @@ textarea{
 
 .boton-form:hover{
     background-color: #f7a5c4;
+    cursor: pointer;
 }
 .boton-form:active{
     background-color: #f1508e;
@@ -565,7 +585,14 @@ textarea{
     margin: 0% 2%;
     font-weight:400;
     color: #f7efdd;
-    /* width: 400px; */
+    padding: 0.5%;
+}
+
+.footer-nav a:active{
+    border-radius: 10px;
+    box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
+-webkit-box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
+-moz-box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
 }
 
 
@@ -612,6 +639,9 @@ textarea{
     }
     .texto-footer{
         font-size: 70%;
+    }
+    .footer-redes .fa-discord{
+        font-size: 9px;
     }
 }
 
