@@ -656,4 +656,9 @@ textarea{
     transition: 0.5s;
 }
 
-
+input[type="email"]:invalid{
+    border:rgb(187, 17, 17) 1px solid; 
+}
+/* input[type="email"]:valid{
+    border: green 1px solid;
+} */
