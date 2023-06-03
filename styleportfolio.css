@@ -266,7 +266,25 @@ h4{
 
 .tarjeta-logo i{
     font-size: 100px;
-    padding: 15px;
+    padding: 10px;
+}
+
+@media (max-width: 540px){
+    .tarjeta-logo{
+        width: 120px;
+        margin: 2%;
+    }
+    .tarjeta-logo i{
+        font-size: 70px;
+    }
+    .tarjeta-logo h4{
+        font-size: 16px;
+    }
+    .contenedor-log-img{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
 }
 
 .fa-html5{
@@ -320,17 +338,18 @@ h4{
 
 @media (max-width:280px){
     blockquote{
-        padding: 0px;
         margin: 0;
     }
     .cita{
-        font-size: 10%;
-        padding: 2px;
-        text-align: flex-start;
+        font-size: 16px;
+        padding: 0px;
     }
     .fa-quote-right{
-        font-size: 30%;
-        padding: 2px;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .autor-cita{
+        font-size: 20px;
     }
 }
 
@@ -346,10 +365,11 @@ h4{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 2%;
     border-radius: 10px;
+    border: #f7efdd 1px solid;
 }
 
 .tarjeta-img h4{
-    height: 20%;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -617,6 +637,7 @@ textarea[type="text"]:valid{
     font-size: 20px;
     background-color: #f7efdd;
     border-radius: 100%;
+    border: #2f2e41 solid 0.5px;
 }
 
 .footer-redes .fa-discord{
