@@ -137,12 +137,24 @@ header{
 .contenedor-imagen{
     margin:0;
     justify-content: center;
-    height: 480px;
-    width: 45%;
+    height: 450px;
+    width: 40%;
+    overflow: hidden;
 }
 
 .img-principal{
-    width: 45vw;
+    border-radius: 100%;
+}
+
+@media (max-width: 1280px){
+    .descripcion-portada{
+        width: 40%;
+    }
+    .contenedor-imagen{
+        width: 35%;
+        height: 400px;
+        border-radius: 100%;
+    }
 }
 
 h2{
@@ -189,8 +201,8 @@ h2{
         text-align: center;
     }
     .contenedor-imagen{
-        width: 100vw;
-        height: 50%;
+        width: 60vw;
+        height: 40vh;
         margin-bottom: 20%;
     }
     h2{
@@ -201,9 +213,16 @@ h2{
     }
 }
 
+@media (max-width:414px){
+    .contenedor-imagen{
+        width: 50vw;
+        height: 30vh;
+    }
+}
+
 
 /*Pseudoclases portada*/
-.boton-portada:hover{
+.boton-portada:hover {
     background-color: #f5b754;
     cursor: pointer;
 }
@@ -215,6 +234,7 @@ h2{
     font-weight:600;
     transition-duration: 0.5s;
 }
+
 
 
 /*MIS CONOCIMIENTOS*/
@@ -244,7 +264,7 @@ h2{
 .contenedor-log-img{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 20px;
     padding-left: 20%;
     padding-right: 20%;
@@ -357,8 +377,8 @@ h4{
 /*MIS PROYECTOS*/
 
 .tarjeta-img{
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     padding: 4%;
     background-color: #f7efdd;
     text-align: center;
@@ -380,11 +400,33 @@ h4{
 }
 
 
-@media (max-width:540px) {
+@media (max-width:912px) {
     .tarjeta-img{
         flex-wrap: wrap;
     }
+    .contenedor-log-img{
+        justify-content: center;
+    }
 }
+@media (min-width:768px){
+    .contenedor-log-img{
+        padding-right: 15%;
+        padding-left: 15%;
+    } 
+}
+
+@media (min-width:1024px){
+    .color-diferencial .contenedor-log-img{
+        padding-right: 20%;
+        padding-left: 20%;
+        justify-content: space-evenly;
+    }
+    .tarjeta-img{
+        width: 250px;
+        height: 200px;
+    }
+}
+
 
 /*Pseudoclases a imagenes de proyectos*/
 .tarjeta-img:hover{
@@ -491,7 +533,7 @@ h4{
 }
 
 .formulario-portfolio label{
-    padding: 2%;
+    margin: 2%;
     font-weight:600;
     text-align: start;
 }
@@ -501,7 +543,19 @@ h4{
 }
 .form-nombre-completo input{
     margin-top: 7%;
+    width: 95%;
 }
+
+@media (max-width: 1024px){
+    .form-nombre-completo input{
+        width: 100%;
+    }
+    .form-correo{
+        width: 100%;
+        margin: 0%;
+    }
+}
+
 
 .form-correo, .form-mensaje{
     text-align: start;
@@ -682,6 +736,7 @@ textarea[type="text"]:valid{
     border: #f7efdd solid 0.5px;
     transition: 0.5s;
 }
+
 
 .footer-nav a:active{
     border-radius: 10px;
