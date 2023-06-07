@@ -77,13 +77,15 @@ header{
 .contacto-nav:hover{
     background-color: #f7a5c4;
 }
-.items-nav:active{
+.items-nav:active, .items-nav:focus{
+    outline: none;
     border-radius: 10px;
     box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
 -webkit-box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
 -moz-box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
 }
-.contacto-nav:active{
+.contacto-nav:active, .contacto-nav:focus{
+    outline: none;
     background-color: #e97ea7;
     box-shadow: -2px 3px 13px 5px rgba(233,126,167,1);
 -webkit-box-shadow: -2px 3px 13px 5px rgba(233,126,167,1);
@@ -147,7 +149,6 @@ header{
 }
 
 
-
 h2{
     font-size: 200%;
     font-weight: 900;
@@ -172,6 +173,7 @@ h2{
     border: transparent;
     border-radius:25px;
     box-shadow: 2px 3px 2px #27354e;
+    overflow: hidden;
 }
 
 
@@ -236,6 +238,15 @@ h2{
     background-color: #f5b754;
     cursor: pointer;
 }
+
+.tab-portada{
+    outline: none;
+}
+.tab-portada:focus .boton-portada{
+    background-color: #f5b754;
+    color: black;
+}
+
 .boton-portada:active{
     background-color: #ec9913;
     width: 140px;
@@ -439,7 +450,8 @@ h4{
 
 
 /*Pseudoclases a imagenes de proyectos*/
-.tarjeta-img:hover{
+.tarjeta-img:hover, .tarjeta-img:focus{
+    outline: none;
     border:#e97ea7 1px solid;
     cursor: pointer;
 }
@@ -622,6 +634,18 @@ textarea{
     cursor: pointer;
 }
 
+.tab-contacto:focus{
+    outline: none;
+}
+.tab-contacto:focus i{
+    color: #f7efdd;
+    background-color: #f1508e;
+    border-radius: 100%;
+}
+.tab-contacto:focus p{
+    color: #f1508e;
+}
+
 
 /*Pseudoclases al formulario*/
 .formulario-portfolio input:not(.boton-form){
@@ -748,9 +772,18 @@ textarea[type="text"]:valid{
     transition: 0.5s;
 }
 
+.tab-footer{
+    outline: none;
+}
 
+.tab-footer:focus i{
+    color: #f7efdd;
+    background-color: #27354e;
+    border: #f7efdd solid 0.5px;
+}
 
-.footer-nav a:active{
+.footer-nav a:active, .footer-nav a:focus{
+    outline: none;
     border-radius: 10px;
     box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
 -webkit-box-shadow: -1px 1px 5px 1px rgba(249,168,38,0.97);
